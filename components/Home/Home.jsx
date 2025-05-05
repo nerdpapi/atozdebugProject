@@ -280,16 +280,15 @@ const home = () => {
                         </div>
 
                     </div>
-                    <div className="w-full mt-20 px-4">
+                    <div className="w-full mt-20">
                         <div className='flex justify-center'>
                             <h1 className='text-center text-[50px] font-bold'>Why <span className='text-red-500'>Logoipsum Hub </span>is Your Best Choice</h1>
                         </div>
                         <div className="flex justify-center">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-10  overflow-visible">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-10  overflow-visible">
                                 <div
                                     className="relative bg-white px-5 pt-6 w-[370px] h-[249px] rounded-sm border border-gray-300 shadow-md hover:shadow-lg 
                                         transition duration-300 flex flex-col items-start text-center overflow-hidden">
-                                    {/* Content */}
                                     <img
                                         src="./images/glassicon.svg"
                                         alt="Icon"
