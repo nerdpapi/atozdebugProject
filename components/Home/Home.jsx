@@ -19,14 +19,13 @@ const home = () => {
                     </div>
                     <div className="w-full mt-20 px-4">
                         <div className='flex justify-center'>
-                            <h1 className='text-center text-[35px] font-bold'>Popular <span className='text-red-500'>Inspiration </span>Categories</h1>
+                            <h1 className='text-center text-[50px] font-bold'>Popular <span className='text-red-500'>Inspiration </span>Categories</h1>
                         </div>
                         <div className="flex justify-center">
-                            <div className="grid grid-flow-col grid-rows-2 gap-7 mt-10  overflow-visible">
+                            <div className="grid gap-10 mt-10 grid-cols-1 lg:grid-cols-3">
                                 <div
                                     className="relative bg-white pt-6 w-[370px] h-[393px] rounded-lg border border-gray-300 shadow-md hover:shadow-lg 
                                         transition duration-300 flex flex-col items-center text-center overflow-hidden">
-                                    {/* Content */}
                                     <img
                                         src="./images/flight_icon.svg"
                                         alt="Icon"
@@ -283,7 +282,7 @@ const home = () => {
                     </div>
                     <div className="w-full mt-20 px-4">
                         <div className='flex justify-center'>
-                            <h1 className='text-center text-[35px] font-bold'>Why <span className='text-red-500'>Logoipsum Hub </span>is Your Best Choice</h1>
+                            <h1 className='text-center text-[50px] font-bold'>Why <span className='text-red-500'>Logoipsum Hub </span>is Your Best Choice</h1>
                         </div>
                         <div className="flex justify-center">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-10  overflow-visible">
