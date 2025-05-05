@@ -7,7 +7,7 @@ const home = () => {
         // <div className='relative w-full h-[800vh]'>
         //     <div className='absolute top-0 left-0 w-full h-full bg-white'></div>
         //     <div className='absolute z-[100] w-full h-full top-[50%] translate-y-[-80%]'>
-                <div className='flex  items-center px-30 mt-20 justify-center flex-col w-full h-full'>
+                <div className='flex  items-center px-40 mt-20 justify-center flex-col w-full h-full'>
                     <div className='container'>
                         <h1 className='text-[25px] text-center md:text-[35px] lg:text-[60px] font-semibold'>Build Scalable SaaS Apps <span className='text-red-500'>10x Faster</span>
                             – Without Reinventing the Wheel.</h1>

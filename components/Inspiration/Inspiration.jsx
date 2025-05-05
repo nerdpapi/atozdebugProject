@@ -55,19 +55,23 @@ export default function Inspiration() {
     const [selectedCategory, setSelectedCategory] = useState(null);
 
     return (
-        <div className="flex px-10 mt-20 items-center justify-center flex-col w-[full] h-[fit]">
-            <div className="flex gap-10 p-6">
-                <FilterSidebar
-                    categories={categories}
-                    stack={stack}
-                    style={style}
-                    colors={colors}
-                    niche={niche}
-                />
+        <div className="flex sm:px-6 lg:px-8 lg:mt-20 sm:mt-5 items-center justify-center flex-col w-full h-fit">
+            <div className="flex flex-col lg:flex-row max-w-[90%] w-full">
+                {/* Sidebar */}
+                <div className="w-full lg:w-[25%]">
+                    <FilterSidebar
+                        categories={categories}
+                        stack={stack}
+                        style={style}
+                        colors={colors}
+                        niche={niche}
+                    />
+                </div>
+
                 <main className="flex-1">
-                    <div className=' grid-cols-1 sm:grid-cols-1 gap-45 grid md:grid-cols-1 lg:grid-cols-2'>
-                        <div className='space-y-5 py-10 w-150'>
-                            <h1 className="text-5xl font-bold mb-4 leading-14">
+                    <div className=' grid-cols-1 sm:grid-cols-1 lg:gap-115 gap-5 grid md:grid-cols-1 lg:grid-cols-2'>
+                        <div className=' py-10 w-200'>
+                            <h1 className="text-6xl font-semibold mb-4 leading-20">
                                 Top <span className="text-red-500">SaaS Web Design</span> Ideas to Inspire You
                             </h1>
                             <p className="text-gray-600 text-2xl leading-10 mb-6">
@@ -76,7 +80,7 @@ export default function Inspiration() {
                                 <span className="text-red-500"> filters.</span>
                             </p></div>
                         <div className="relative w-[370px] h-[343px] rounded-2xl bg-red-100 border border-red-400 overflow-hidden cursor-pointer shadow-xl">
-                            {/* Decorative Images - Positioned absolutely within the relative parent */}
+
                             <div className="absolute top-[105px] left-[80px]">
                                 <img src="./images/decor.png" alt="Decor 1" />
                             </div>
@@ -87,7 +91,6 @@ export default function Inspiration() {
                                 <img src="./images/decor2.png" alt="Decor 3" />
                             </div>
 
-                            {/* Main Content */}
                             <div className="py-12 px-10 w-full relative z-10">
                                 <h1 className="text-xl font-bold mb-2">
                                     Receive Weekly Inspiration:<br /> 7 Top SaaS Designs<br /> Delivered to Your Inbox.
@@ -114,16 +117,23 @@ export default function Inspiration() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex items-center">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-9">
-                            {inspiration.map((item) => (
-                                <div key={item.id} className=" w-[340px] h-[399px] border border-gray-400 rounded-2xl overflow-hidden cursor-pointer shadow-xl transition duration-200">
-                                    <ImageOverlay imageUrl={item.desktopScreenshot} initialViewCount={item.views} descriptionPageUrl={`/description/${item.id}`} />
-                                </div>
-                            ))}
-                        </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                        {inspiration.map((item) => (
+                            <div
+                                key={item.id}
+                                className="w-full border border-gray-300 rounded-2xl overflow-hidden cursor-pointer shadow-md transition hover:shadow-xl"
+                            >
+                                <ImageOverlay
+                                    imageUrl={item.desktopScreenshot}
+                                    initialViewCount={item.views}
+                                    descriptionPageUrl={`/description/${item.id}`}
+                                />
+                            </div>
+                        ))}
                     </div>
-                    <div className="flex items-center justify-center flex-col w-full h-fit mt-10 pr-30">
+
+                    <div className="flex items-center justify-center mt-12">
                         <div className="flex items-center gap-2 text-red-500">
                             <img
                                 src="./images/progressicon.svg"
@@ -133,7 +143,6 @@ export default function Inspiration() {
                             <span>Wait Loading more…</span>
                         </div>
                     </div>
-
                 </main>
             </div>
         </div>
