@@ -328,7 +328,7 @@ const home = () => {
                     <div className="w-full px-4 flex justify-center mt-20">
                         <div className="grid grid-flow-col grid-rows-1 gap-7 overflow-visible">
                             <div
-                                className="relative bg-red-100 px-10 pt-6 lg:w-[1170px] lg:h-[336px] w-[500px] h-[200px] rounded-3xl border border-red-400 shadow-xl
+                                className="relative bg-red-100 px-10 pt-6 lg:w-[1170px] lg:h-[336px] rounded-3xl border border-red-400 shadow-xl
                                         transition duration-300 flex flex-col items-start text-center overflow-hidden">
 
                                 <h2 className="lg:text-3xl text-sm font-[700] text-black mb-2 text-start">Ready to <span className='text-red-500'>Build Your SaaS </span>Without the<br /> Headaches?</h2>
