@@ -70,11 +70,11 @@ export default function Inspiration() {
 
                 <main className="flex-1">
                     <div className=' grid-cols-1 sm:grid-cols-1 lg:gap-115 gap-5 grid md:grid-cols-1 lg:grid-cols-2'>
-                        <div className=' py-10 w-200'>
-                            <h1 className="text-6xl font-semibold mb-4 leading-20">
+                        <div className=' py-10 w-150'>
+                            <h1 className="text-5xl font-bold mb-4 leading-15 tracking-wide">
                                 Top <span className="text-red-500">SaaS Web Design</span> Ideas to Inspire You
                             </h1>
-                            <p className="text-gray-600 text-3xl leading-10 mb-6">
+                            <p className="text-gray-600 text-2xl leading-9 mb-6 tracking-wide">
                                 Explore an expertly crafted showcase of top-tier SaaS landing pages from across the web. Effortlessly
                                 discover design inspiration tailored to your needs using our intuitive
                                 <span className="text-red-500"> filters.</span>

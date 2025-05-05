@@ -4,10 +4,8 @@ import { HiArrowRight } from 'react-icons/hi2';
 
 const home = () => {
     return (
-        // <div className='relative w-full h-[800vh]'>
-        //     <div className='absolute top-0 left-0 w-full h-full bg-white'></div>
-        //     <div className='absolute z-[100] w-full h-full top-[50%] translate-y-[-80%]'>
-                <div className='flex  items-center px-40 mt-20 justify-center flex-col w-full h-full'>
+        <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 lg:mt-20 sm:mt-5">
+                <div className='flex items-center mt-20 justify-center flex-col'>
                     <div className='container'>
                         <h1 className='text-[25px] text-center md:text-[35px] lg:text-[60px] font-semibold'>Build Scalable SaaS Apps <span className='text-red-500'>10x Faster</span>
                             – Without Reinventing the Wheel.</h1>
@@ -393,9 +391,10 @@ const home = () => {
                                 </div>
                             </div>
                         </div>
-                    </div></div>
-        //     </div>
-        // </div>
+                    </div>
+                    </div>
+                    </div>
+
 
     )
 }
