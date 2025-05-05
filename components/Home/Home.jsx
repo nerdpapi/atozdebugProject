@@ -22,7 +22,7 @@ const home = () => {
                             <h1 className='text-center text-[35px] font-bold'>Popular <span className='text-red-500'>Inspiration </span>Categories</h1>
                         </div>
                         <div className="flex justify-center">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-10  overflow-visible">
+                            <div className="grid grid-flow-col grid-rows-2 gap-7 mt-10  overflow-visible">
                                 <div
                                     className="relative bg-white pt-6 w-[370px] h-[393px] rounded-lg border border-gray-300 shadow-md hover:shadow-lg 
                                         transition duration-300 flex flex-col items-center text-center overflow-hidden">
@@ -152,7 +152,7 @@ const home = () => {
                                 <div
                                     className="relative bg-white pt-6 w-[370px] h-[393px] rounded-lg border border-gray-300 shadow-md hover:shadow-lg 
                                         transition duration-300 flex flex-col items-center text-center overflow-hidden">
-                                    {/* Content */}
+
                                     <img
                                         src="./images/register_icon.svg"
                                         alt="Icon"
@@ -161,9 +161,8 @@ const home = () => {
                                     <h2 className="text-2xl font-[600] text-gray-800 mb-2">Signup Pages</h2>
                                     <p className="text-gray-600 text-base font-[400] mb-4 px-6">18+ high-converting designs to grow your user base</p>
 
-                                    {/* Image container with proper boundaries */}
                                     <div className="relative w-full h-full gap-x-2 overflow-hidden ">
-                                        {/* Left Image (30% width) */}
+                           
                                         <div className="absolute -bottom-20 -left-16.5 w-full h-full">
                                             <a href='/images/signup1.png' target='_blank'><img
                                                 src="./images/signup1.png"
@@ -172,7 +171,6 @@ const home = () => {
                                             /></a>
                                         </div>
 
-                                        {/* Center Image (40% width) */}
                                         <div className="absolute -bottom-13 left-26 w-full h-full z-10">
                                             <a href='/images/signup2.png' target='_blank'><img
                                                 src="./images/signup2.png"
@@ -180,8 +178,7 @@ const home = () => {
                                                 className="ww-[158px] h-[103px] object-fill rounded-md shadow-lg border border-gray-300"
                                             /></a>
                                         </div>
-
-                                        {/* Right Image (30% width) */}
+                                   
                                         <div className="absolute -bottom-20 left-69 w-full h-full z-10">
                                             <a href='/images/signup3.png' target='_blank'><img
                                                 src="./images/signup3.png"

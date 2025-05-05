@@ -113,7 +113,7 @@ export default function DescriptionPage({ id }) {
                         .map((entry) => (
                             <div
                                 key={entry.id}
-                                className="w-full h-[500px] border border-gray-300 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
+                                className="w-full h-[800px] border border-gray-300 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300"
                             >
                                 <Image
                                     src={entry.desktopScreenshot}
