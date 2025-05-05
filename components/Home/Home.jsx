@@ -4,15 +4,12 @@ import { HiArrowRight } from 'react-icons/hi2';
 
 const home = () => {
     return (
-        <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 lg:mt-20 sm:mt-5">
-                <div className='flex items-center mt-20 justify-center flex-col'>
-                    <div className='container'>
-                        <h1 className='text-[25px] text-center md:text-[35px] lg:text-[60px] font-semibold'>Build Scalable SaaS Apps <span className='text-red-500'>10x Faster</span>
+<div className='flex items-center mt-20 justify-center flex-col w-full h-full max-w-[90%] mx-auto sm:px-6 lg:px-8 lg:mt-20 sm:mt-5'>
+                        <h1 className='text-[25px] text-center md:text-[35px] lg:text-[70px] font-semibold'>Build Scalable SaaS Apps <span className='text-red-500'>10x Faster</span>
                             – Without Reinventing the Wheel.</h1>
-                        <p className=' mt-10 text-center text-[30px] font-light text-gray-600'>Built for creators, by experts—explore proven resources from <br />
+                        <p className=' mt-10 text-center text-[20px] lg:text-[35px] font-light text-gray-600'>Built for creators, by experts—explore proven resources from <br />
                             SaaS leaders who know what works.</p>
 
-                    </div>
                     <div className='flex gap-5 mt-20'>
                         <button className="flex items-center md:px-5 md:py-5 gap-2 text-red-400 text-[20px] bg-white hover:bg-gray-100 border-1 rounded cursor-pointer">Explore Free Resources<HiArrowRight size={20} /></button>
 
@@ -25,7 +22,7 @@ const home = () => {
                             <h1 className='text-center text-[35px] font-bold'>Popular <span className='text-red-500'>Inspiration </span>Categories</h1>
                         </div>
                         <div className="flex justify-center">
-                            <div className="grid grid-flow-col grid-rows-2 gap-7 mt-10  overflow-visible">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-10  overflow-visible">
                                 <div
                                     className="relative bg-white pt-6 w-[370px] h-[393px] rounded-lg border border-gray-300 shadow-md hover:shadow-lg 
                                         transition duration-300 flex flex-col items-center text-center overflow-hidden">
@@ -292,7 +289,7 @@ const home = () => {
                             <h1 className='text-center text-[35px] font-bold'>Why <span className='text-red-500'>Logoipsum Hub </span>is Your Best Choice</h1>
                         </div>
                         <div className="flex justify-center">
-                            <div className="grid grid-flow-col grid-rows-1 gap-7 mt-10  overflow-visible">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-10  overflow-visible">
                                 <div
                                     className="relative bg-white px-5 pt-6 w-[370px] h-[249px] rounded-sm border border-gray-300 shadow-md hover:shadow-lg 
                                         transition duration-300 flex flex-col items-start text-center overflow-hidden">
@@ -333,14 +330,14 @@ const home = () => {
                         </div>
 
                     </div>
-                    <div className="flex justify-center">
-                        <div className="grid grid-flow-col grid-rows-1 gap-7 mt-10  overflow-visible">
+                    <div className="w-full px-4 flex justify-center mt-20">
+                        <div className="grid grid-flow-col grid-rows-1 gap-7 overflow-visible">
                             <div
-                                className="relative bg-red-100 px-10 pt-6 w-[1170px] h-[336px] rounded-3xl border border-red-400 shadow-xl
+                                className="relative bg-red-100 px-10 pt-6 lg:w-[1170px] lg:h-[336px] w-[500px] h-[200px] rounded-3xl border border-red-400 shadow-xl
                                         transition duration-300 flex flex-col items-start text-center overflow-hidden">
 
-                                <h2 className="text-3xl font-[700] text-black mb-2 text-start">Ready to <span className='text-red-500'>Build Your SaaS </span>Without the<br /> Headaches?</h2>
-                                <p className="text-gray-600 text-xl font-[400] mb-10 mt-5  text-start">Join 2,000+ teams who design smarter and faster with our<br /> handpicked resources.</p>
+                                <h2 className="lg:text-3xl text-sm font-[700] text-black mb-2 text-start">Ready to <span className='text-red-500'>Build Your SaaS </span>Without the<br /> Headaches?</h2>
+                                <p className="text-gray-600 lg:text-xl text-sm  font-[400] mb-10 mt-5  text-start">Join 2,000+ teams who design smarter and faster with our<br /> handpicked resources.</p>
                                 <button className="flex items-center h-10 md:px-5 md:py-5 gap-2 text-white text-[15px] bg-red-400
                                      hover:bg-red-500  rounded cursor-pointer">Start Exploring Resources</button>
                                 <div className="static w-full h-full overflow-hidden ">
@@ -391,10 +388,7 @@ const home = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    </div>
-                    </div>
-
+                  </div>    </div>
 
     )
 }
