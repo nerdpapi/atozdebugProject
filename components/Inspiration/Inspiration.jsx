@@ -74,7 +74,7 @@ export default function Inspiration() {
                             <h1 className="text-6xl font-semibold mb-4 leading-20">
                                 Top <span className="text-red-500">SaaS Web Design</span> Ideas to Inspire You
                             </h1>
-                            <p className="text-gray-600 text-2xl leading-10 mb-6">
+                            <p className="text-gray-600 text-3xl leading-10 mb-6">
                                 Explore an expertly crafted showcase of top-tier SaaS landing pages from across the web. Effortlessly
                                 discover design inspiration tailored to your needs using our intuitive
                                 <span className="text-red-500"> filters.</span>
