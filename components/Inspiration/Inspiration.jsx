@@ -53,28 +53,38 @@ const niche = [
 
 export default function Inspiration() {
     const [selectedCategory, setSelectedCategory] = useState(null);
+    const [showSidebar, setShowSidebar] = useState(false);
 
     return (
         <div className="flex sm:px-6 lg:px-8 lg:mt-20 sm:mt-5 items-center justify-center flex-col w-full h-fit">
             <div className="flex flex-col lg:flex-row max-w-[90%] w-full">
-                {/* Sidebar */}
                 <div className="w-full lg:w-[25%]">
-                    <FilterSidebar
-                        categories={categories}
-                        stack={stack}
-                        style={style}
-                        colors={colors}
-                        niche={niche}
-                    />
+                    <div className="lg:hidden flex justify-end px-4 mb-4">
+                        <button
+                            onClick={() => setShowSidebar(!showSidebar)}
+                            className="px-4 py-2 text-sm text-white bg-gray-700 rounded-md"
+                        >
+                            {showSidebar ? 'Hide Filters' : 'Show Filters'}
+                        </button>
+                    </div>
+                    <div className={`${showSidebar ? 'block' : 'hidden'} lg:block`}>
+                        <FilterSidebar
+                            categories={categories}
+                            stack={stack}
+                            style={style}
+                            colors={colors}
+                            niche={niche}
+                        />
+                    </div>
                 </div>
 
                 <main className="flex-1">
-                    <div className=' grid-cols-1 sm:grid-cols-1 lg:gap-115 gap-5 grid md:grid-cols-1 lg:grid-cols-2'>
-                        <div className=' py-10 w-150'>
-                            <h1 className="text-5xl font-bold mb-4 leading-15 tracking-wide">
+                    <div className=' grid grid-cols-1 lg:gap-115 gap-5 lg:grid-cols-2'>
+                        <div className=' py-10 lg:w-150 w-80 '>
+                            <h1 className="lg:text-5xl text-lg font-bold mb-4 leading-15 tracking-wide">
                                 Top <span className="text-red-500">SaaS Web Design</span> Ideas to Inspire You
                             </h1>
-                            <p className="text-gray-600 text-2xl leading-9 mb-6 tracking-wide">
+                            <p className="text-gray-600 text-sm lg:text-2xl leading-9 mb-6 tracking-wide">
                                 Explore an expertly crafted showcase of top-tier SaaS landing pages from across the web. Effortlessly
                                 discover design inspiration tailored to your needs using our intuitive
                                 <span className="text-red-500"> filters.</span>
@@ -118,7 +128,7 @@ export default function Inspiration() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-10 ">
                         {inspiration.map((item) => (
                             <div
                                 key={item.id}
