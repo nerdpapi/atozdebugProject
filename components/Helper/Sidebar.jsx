@@ -10,7 +10,7 @@ const FilterSidebar = ({ categories, stack, style, colors, niche }) => {
     };
 
     return (
-<aside className="w-full lg:w-80 sticky lg:top-0 self-start border px-5 py-10 rounded-2xl h-fit bg-white border-gray-400">
+        <aside className="w-full lg:w-80 sticky lg:top-0 self-start border px-5 py-10 rounded-2xl h-fit bg-white border-gray-400">
             <h2 className="font-semibold text-xl text-gray-500 mb-4 border-b pb-4">Filter Resource</h2>
             {[
                 { label: 'Categories', data: categories },
