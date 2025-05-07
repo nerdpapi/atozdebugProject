@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# AtoZDebug – SaaS Design Inspiration Hub
 
-First, run the development server:
+Explore beautifully curated SaaS landing pages and web designs. This project is built to inspire designers and developers with real-world design references categorized by stack, style, niche, and more.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Live Demo
+
+👉 [Visit Live Site](https://atozdebug-project.vercel.app/)
+
+---
+
+## 📁 Features
+
+- 🔍 Filter by **category**, **stack**, **style**, **color**, and **niche**
+- 📸 View **desktop** and **mobile** screenshots
+- 🧩 Modular, component-based architecture using **React/Next.js**
+- 🎨 Styled with **Tailwind CSS**
+- 📄 Dynamic rendering using static JSON data
+- 📬 Email subscription CTA (dummy form)
+- 🖼 Responsive grid layout for inspiration items
+
+---
+
+## 🛠 Tech Stack
+
+- **Next.js** – React Framework
+- **Tailwind CSS** – Utility-first CSS framework
+- **Vercel** – Deployment platform
+- **Static JSON Data** – For rendering design items
+
+---
+
+## 📂 Folder Structure
+
 ```
+.
+├── components/
+│   ├── Helper/
+│   ├── FilterSidebar.jsx
+│   └── ImageOverlay.jsx
+├── data/
+│   └── inspiration.json
+├── pages/
+│   ├── index.js
+│   └── description/[id].js
+├── public/
+│   └── images/
+├── styles/
+└── README.md
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Static JSON Sample (`inspiration.json`)
