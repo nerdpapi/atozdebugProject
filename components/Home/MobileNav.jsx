@@ -7,14 +7,11 @@ import { MdClose } from 'react-icons/md'
 const MobileNav = ({ isOpen, onClose }) => {
   return (
     <div className={`fixed top-0 right-0 z-[9999] h-full w-3/4 sm:w-1/2 bg-white shadow-lg transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
-      {/* Close Button */}
       <div className="flex justify-end p-4">
         <button onClick={onClose}>
-          <MdClose className="w-6 h-6 text-gray-600 hover:text-red-400" />
+          <MdClose className="w-6 h-6 text-black hover:text-red-400" />
         </button>
       </div>
-
-      {/* Navigation Links */}
       <nav className="flex flex-col items-start space-y-6 p-6">
         {navLinks.map((link) => (
           <Link
